@@ -1,0 +1,86 @@
+/* STYLING THE FOOTER */
+
+.footer{
+	background-color: rgb(51, 33, 63);
+	color: rgb(211, 208, 208);
+	display: flex;
+	/* automatically aligns things in a row by default so you need to change the direction so we
+	can stack items on one another */
+	justify-content: center;
+	align-items: center;
+	/* changing default row direction to column direction */
+	flex-direction: column; 
+	height: 250px;
+	margin-top: -4px;
+}
+
+.footer>.footer-logo{
+	display: flex;
+	justify-content: center;
+}
+
+.footer>.footer-logo img{
+	width: 125px;
+	margin-top: -15px;
+	opacity: 0.25;
+}
+
+.footer>.times-hours span{
+	margin-left: 10px;
+	margin-right: 10px;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+}
+
+/* .footer>.times-hours>.phone{
+	font-family: 'Share Tech Mono', monospace;
+} */
+
+.footer>.socials{
+	display: flex;
+	justify-content: space-around;
+	width: 300px;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer>.socials>.social a{
+	color: rgb(211, 208, 208);
+	text-decoration: none;
+	font-size: 1.3em;	
+	-webkit-transition: all 500ms ease-in-out 0.1s;
+	-moz-transition: all 500ms ease-in-out 0.1s;
+	-o-transition: all 500ms ease-in-out 0.1s;
+	transition: all 500ms ease-in-out 0.1s;
+}
+
+.footer>.socials>.social a:hover{
+	color: rgb(221, 195, 49); 
+}
+
+.footer>.scroller{
+	margin-bottom: 15px;
+}
+
+.footer>.scroller a{
+	text-decoration: none;
+	color: rgb(211, 208, 208);	
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	-webkit-transition: all 500ms ease-in-out 0.1s;
+	-moz-transition: all 500ms ease-in-out 0.1s;
+	-o-transition: all 500ms ease-in-out 0.1s;
+	transition: all 500ms ease-in-out 0.1s;
+}
+
+.footer>.scroller a:hover{
+	color: rgb(221, 195, 49); 
+	letter-spacing: 4px;
+}
+
+.footer>.copyrights{
+	font-size: 0.4em;
+	letter-spacing: 2px;
+	margin-top: 2px;
+}

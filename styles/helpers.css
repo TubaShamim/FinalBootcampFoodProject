@@ -1,0 +1,24 @@
+.helper-1{
+	width: 100%;
+	height: 115px;
+}
+
+.anchor-link{
+	text-decoration: none;
+}
+
+.spacer10{
+	width: 100%;
+	height: 120px;
+}
+
+.anchor-link:focus{
+	outline: none;
+}
+
+.anchor-link h1::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f0c9";
+	font-weight: 900;
+}
+

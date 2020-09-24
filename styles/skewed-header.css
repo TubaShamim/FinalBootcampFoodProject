@@ -1,0 +1,51 @@
+/* STYLING SKEWED HEADER */
+
+.skewed-header{
+	position: relative;
+	height: 340px;
+	overflow: hidden;
+}
+
+/* in order for child class to be absolute (nav at top) the parent class has to be relative */
+
+.skewed-header>.header-bg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 75%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: skewY(-6deg);
+	filter: brightness(0.5);
+	transform-origin: top left;
+	/* background-attachment: fixed; */
+}
+
+.skewed-header>.skewed-header-wrapper{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.skewed-header>.skewed-header-wrapper>.skewed-header-content{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 10px;
+  margin-right: 20px;
+}
+
+.skewed-header>.skewed-header-wrapper>.skewed-header-content>.heading-wrapper{
+	background-color: rgb(221, 195, 49); 
+	color: rgb(51, 33, 63);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	width: 175px;
+	padding: 10px;
+	text-align: center;
+}

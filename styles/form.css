@@ -1,0 +1,102 @@
+.page-container{
+	margin:0px 40px 0px -40px;
+}
+
+.form>.form-group{
+	margin:30px 0px 20px 0px;
+}
+
+.form input{
+	font-size: 1.1rem;
+	padding: 1.1rem 4rem 1.1rem 0.5rem;	
+	border-radius: 2px;
+	border: none;
+	border-bottom: 3px solid rgb(50, 36, 65);
+	width: 100%;
+	transition: all 0.4s;
+	display: block;
+}
+
+.form input:focus{
+	outline: none;
+	box-shadow: 0 1rem 2rem rgba(50, 36, 65, 0.1);
+	border-bottom: 3px solid rgb(221, 195, 49); 
+}
+
+#form-group input{
+	width: 100%;
+}
+
+.form textarea{
+	margin: 25px 0px 0px 0px;
+	width: 94%;
+	height: 250px;
+	border-radius: 3px;
+	border: 3px solid rgb(50, 36, 65);
+	font-size: 1.1rem;
+	font-family: inherit;
+	padding: 1.1rem 1rem;
+	transition: all 0.3s;	
+}
+
+.form textarea:focus{
+	outline: none;
+	box-shadow: 0 1rem 2rem rgba(50, 36, 65, 0.1);
+	border: 3px solid rgb(221, 195, 49); 
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
+	color: rgb(238, 214, 79); 
+}
+
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+
+.form label{
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-left: 0.16rem;
+	margin-top: 0.7rem;
+	display: block;
+	transition: all 0.4s;
+	/* visibility animation:  */
+	visibility: hidden;
+	/* opacity animation */
+	opacity: 0;
+}
+
+.form input:focus + label, .form textarea:focus + label{
+	opacity: 0.8;
+	visibility: visible;
+	transform: translateY(0.15rem); /*move down y-axis by 1 val*/
+}
+
+/* STYLING THE BUTTON */
+
+.button{
+	margin-top: 20px;
+	background-color: rgb(221, 195, 49); 
+	color: rgb(50, 36, 65);
+	font-size: 1.25em;
+	padding: 10px 25px 10px 25px;
+	border: 1px solid rgb(221, 195, 49); 
+	border-radius: 2px;
+	outline: none;
+	transition: ease-in-out 0.3s;
+}
+
+.button:hover{
+	background-color:rgb(50, 36, 65);
+	color: rgb(221, 195, 49); 
+	border: 1px solid rgb(50, 36, 65);
+}
+
+.button:active{
+	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form>.centered-btn-wrapper{
+	display: flex;
+	justify-content: center;
+}

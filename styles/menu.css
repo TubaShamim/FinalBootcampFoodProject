@@ -1,0 +1,47 @@
+/* STYLING MENU */
+
+.squares-wrapper{
+	display: flex;
+	justify-content: center;
+	/* margin-top: -12px; */
+}
+
+.squares-wrapper>.squares{
+	width: 1000px;
+}
+
+.squares-wrapper>.squares>.square{
+	display: grid;
+	grid-template-columns: 1fr 1fr;	/* gives two equal columns */
+	margin: -4px;
+}
+
+.squares-wrapper>.squares>.square>.img-wrapper img{
+width: 100%;
+height: 500px;
+object-fit: cover;
+}
+
+.squares-wrapper>.squares>.square>.square-text-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px;
+	height: 83.3%;
+	transition: ease-in-out 0.3s;
+}
+
+.squares-wrapper>.squares>.square>.square-text-wrapper h1{
+	color: rgb(221, 195, 49);
+	transition: ease-in-out 0.3s;
+}
+
+.squares-wrapper>.squares>.square>.square-text-wrapper:hover{
+	background-color: rgb(221, 195, 49);
+	color: rgb(51, 33, 63);
+}
+
+.squares-wrapper>.squares>.square>.square-text-wrapper:hover h1{
+	color: rgb(51, 33, 63);
+}

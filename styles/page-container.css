@@ -1,0 +1,23 @@
+/* PAGE CONTAINER STYLES */
+
+.page-container{
+	display: flex;
+	justify-content: center;
+}
+
+.page-container>.content-wrapper{
+	width: 1000px;
+	margin: 0px 25px 70px 0px;
+}
+
+.page-container>.content-wrapper p{
+	letter-spacing: 1px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.page-container>.content-wrapper>#chef{
+	width: 350px;
+	margin: 19px 25px 20px 0px;
+	float: left;
+}

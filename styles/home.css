@@ -1,0 +1,78 @@
+/* STYLING THE HERO SECTION */
+
+.hero-section{
+	background-image: url(../images/friesbg.jpg);
+	padding:130px 100px 100px 70px;
+	height: 145px;
+	/* parrallex activation */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
+}
+
+.hero-section>.top-heading, .bottom-heading{
+	text-align: center;
+	color: white;
+}
+
+/* STYLING THE SERVICES SECTION */
+
+.services-section{
+	background-image: url(../images/multifriesbg.jpg);
+	opacity: 0.95;
+	height: 360px;
+	background-color: rgb(221, 195, 49); 
+	color: rgb(50, 36, 65);
+	/* activating flex */
+	display: flex;
+	/* centered horizontolly */
+	justify-content: center; 
+	/* centered vertically */
+	align-items: center;
+	/* box-shadow: inset 0px -20px 20px -20px rgba(38, 23, 46, 0.582); */
+	/* -webkit-box-shadow: inset 0px -20px 20px -20px rgba(38, 23, 46, 0.582);
+	-moz-box-shadow: inset 0px -20px 20px -20px rgba(38, 23, 46, 0.582);
+	box-shadow: inset 0px -20px 20px -20px rgba(38, 23, 46, 0.582); */
+}
+
+.services-section>.columns-wrapper{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-section>.columns-wrapper>.column{
+	padding: 50px 4px 40px 4px;
+	margin: 42px;
+	text-align: center;
+	border-bottom: 5px solid transparent;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.services-section>.columns-wrapper>.column:hover{
+	border-bottom: 5px solid rgb(50, 36, 65);
+}
+
+.services-section>.columns-wrapper>.column :nth-child(1){
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.services-section>.columns-wrapper>.column :nth-child(2){
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 25px;
+	transition: 1s;
+}
+
+.services-section>.columns-wrapper>.column :nth-child(2):hover{
+	letter-spacing: 0.5px;
+}
+
+.services-section>.columns-wrapper>.column :nth-child(3){
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
